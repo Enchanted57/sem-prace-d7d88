@@ -9,7 +9,8 @@ sections:
       fill the contact form below or send us an email at
       [example@example.com](mailto:example@example.com).
     form_id: contactForm
-    form_action: /thank-you
+    form_method: get
+    form_action: /thank-you/
     form_fields:
       - input_type: text
         name: name

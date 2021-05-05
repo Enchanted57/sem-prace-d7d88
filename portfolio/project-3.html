@@ -1,0 +1,76 @@
+---
+title: Chat application
+subtitle: simple real time chat application 
+date: '2019-04-08'
+thumb_image: images/chatapp_thumb.png
+thumb_image_alt: A yellow retro telephone on a yellow background
+image: images/chatapp.png
+image_alt: A yellow retro telephone on a yellow background
+seo:
+  title: Project Title 3
+  description: This is the project 3 description
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Project Title 3
+      keyName: property
+    - name: 'og:description'
+      value: This is the project 3 description
+      keyName: property
+    - name: 'og:image'
+      value: images/3.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Project Title 3
+    - name: 'twitter:description'
+      value: This is the project 3 description
+    - name: 'twitter:image'
+      value: images/3.jpg
+      relativeUrl: true
+layout: project
+---
+
+<article>
+  <h2>The tools I used for this project</h2>
+  <p>
+    I created a simple real time web application.
+    That was quite a challenging project because I decided to use tools I had no experience with but I was very curious about them.
+    I used <strong>node.js</strong> on server side to create a <strong>REST API</strong> and then I also wrote a client app in <strong>React.js</strong>.
+    It was a lot of fun to see how we can use javascript on both backend and the frontend.
+    You can have a look at <a href="https://github.com/Enchanted57/TextMe">chat app github repo.</a>
+  </p>
+  <ul>
+    <li>
+      <a href="https://nodejs.org/en/">node.js</a>
+    </li>
+    <li>
+      <a href="https://reactjs.org">react.js</a>
+    </li>
+    <li>
+      <a href="https://material-ui.com">material-ui</a>
+    </li>
+    <li>
+      <a href="https://feathersjs.com">feathersjs</a>
+    </li>
+    <li>
+      <a href="https://www.mysql.com">mysql</a>
+    </li>
+  </ul>
+</article>
+
+<article>
+  <h3>Project summary</h3>
+  <p>
+    Project consists of two parts. The <a href="https://github.com/Enchanted57/TextMe">server application</a> and
+    the <a href="https://github.com/Enchanted57/text-me-client">client application</a>.
+  </p>
+  <p>
+    Server provides REST API, saves messages in database and manages sockets connections. The authentication is implemented with the help of
+    <a href="https://jwt.io">jwt</a>. The client 'listens' to servers notifications and if needed will pull new messages.
+  </p>
+</article>

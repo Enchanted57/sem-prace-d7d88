@@ -1,0 +1,106 @@
+---
+title: 'My homepage'
+subtitle: 'Static portfolio home page'
+date: '2019-05-10'
+thumb_image: images/homepage_thumb.jpg
+thumb_image_alt: 'image of house in the program window'
+image: images/homepage.jpg
+image_alt: 'image of house in the program window'
+seo:
+  title: 'My homepage'
+  description: This is the project 1 description
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Project Title 1
+      keyName: property
+    - name: 'og:description'
+      value: This is the project 1 description
+      keyName: property
+    - name: 'og:image'
+      value: images/1.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Project Title 1
+    - name: 'twitter:description'
+      value: This is the project 1 description
+    - name: 'twitter:image'
+      value: images/1.jpg
+      relativeUrl: true
+layout: project
+---
+
+<article>
+  <p>
+    In this article I will describe how I built this web site.
+    It's built upon the jekyll static web site generator and Exto template.
+    We will go through the tools I used and how I built it.
+  </p>
+
+  <dl>
+    <dt>Jekyll</dt>
+    <dd> - static website generator</dd>
+    <dt>Ruby</dt>
+    <dd> - programming language used by jekyll</dd>
+    <dt>Gem</dt>
+    <dd> - package manager for Ruby dependencies</dd>
+    <dt>Exto</dt>
+    <dd>
+      - is the open source template for personal portfolio page,&nbsp;
+      <a href="https://themes.stackbit.com/demos/exto/">theme live preview</a>
+    </dd>
+  </dl>
+
+  <p>
+    In order to install jekyll first you need to have ruby and gem installed on your local machine.
+    The installation might differ from system to system. To install jekyll run:
+  </p>
+
+  <div class="language-console highlighter-rouge">
+    <div class="highlight">
+      <pre class="highlight"><code><span class="gp">sudo gem install bundler jekyll</span></code></pre>
+    </div>
+  </div>
+
+  <p>Note that gem is not Gaussian elimination ;)</p>
+
+  <p>After you successfully installed jekyll you can create a blank web page.</p>
+
+  <div class="language-console highlighter-rouge">
+    <div class="highlight">
+      <pre class="highlight"><code><span class="gp">jekyll new <span>someWebpageName</span> --blank</span></code></pre>
+    </div>
+  </div>
+
+  <p>Then you can serve it locally with live reload.</p>
+
+  <div class="language-console highlighter-rouge">
+    <div class="highlight">
+      <pre class="highlight"><code><span class="gp">jekyll serve --livereload</span></code></pre>
+    </div>
+  </div>
+
+  <p>And that's jekyll. Afterwards I installed the <strong>Exto</strong> theme modified the code to my needs and filled it with content.</p>
+
+<!--  <blockquote>-->
+<!--    <p>-->
+<!--      "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away." -Antoine de Saint-Exupery-->
+<!--    </p>-->
+<!--  </blockquote>-->
+
+<!--  <div class="language-console highlighter-rouge">-->
+<!--    <div class="highlight">-->
+<!--      <pre class="highlight">-->
+<!--        <code>-->
+<!--          <span class="gp">int x = 42;</span>-->
+<!--          <span class="gp">std::cout << x << std::endl;</span>-->
+<!--        </code>-->
+<!--      </pre>-->
+<!--    </div>-->
+<!--  </div>-->
+</article>

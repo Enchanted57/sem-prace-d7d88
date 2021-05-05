@@ -92,6 +92,11 @@ body {
 }
 ```
 
+```console
+  int x = 42;
+  std::cout << x << std::endl;
+```
+
 ## Tables
 
 <table>

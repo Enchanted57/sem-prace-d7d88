@@ -1,0 +1,68 @@
+---
+title: Web server
+subtitle: Web server as the semestral project
+date: '2019-04-30'
+thumb_image: images/webserver_thumb.jpg
+thumb_image_alt: An orange on a blue background
+image: images/webserver1.png
+image_alt: An orange on a blue background
+seo:
+  title: Project Title 2
+  description: This is the project 2 description
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Project Title 2
+      keyName: property
+    - name: 'og:description'
+      value: This is the project 2 description
+      keyName: property
+    - name: 'og:image'
+      value: images/2.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Project Title 2
+    - name: 'twitter:description'
+      value: This is the project 2 description
+    - name: 'twitter:image'
+      value: images/2.jpg
+      relativeUrl: true
+layout: project
+---
+
+<article>
+  <p>
+    This project was a very challenging for me. As it requires a very good understanding and knowledge of HTTP protocol.
+    I had to understand how to chunk the response and not to lose even 1 bit of information. Had to learn about linux processes a little bit.
+  </p>
+
+  <p>
+    I developed and tested my webserver on Ubuntu 18.04. For other operating system a little refactoring will be required.
+    Because I used some linux specific apis such as sockets. A little code refactoring is required to run it on the operationg systems.
+  </p>
+
+  <ul>
+    <span class="list-header">Tools I used</span>
+    <li>Linux operating system (Ubuntu 18.04)</li>
+    <li>
+      C++ programming language
+      <ul>
+        <li>Sockets api</li>
+        <li>Child processes - <code>fork()</code> function</li>
+        <li>Streams</li>
+      </ul>
+    </li>
+    <li>Makefile</li>
+  </ul>
+</article>
+
+<h2>What I learned</h2>
+<p>
+  This project actually was a part of my semestral work on programming and algorithmics 2 subject.
+  And I actually learned a lot and was very satisfied with the result. Have a look on my <a href="https://gitlab.fit.cvut.cz/nurmaali/semestral-project">webserver repository.</a>
+</p>

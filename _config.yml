@@ -7,7 +7,7 @@ collections:
 color_scheme: light
 accent_color: pink
 header:
-  title: Exto
+  title: Exto+
   has_nav: true
   nav_links:
     - label: Home
@@ -27,6 +27,9 @@ header:
       style: link
     - label: Contact
       url: /contact/
+      style: link
+    - label: Text
+      url: /text/
       style: link
 footer:
   content: >-
