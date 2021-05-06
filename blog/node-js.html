@@ -1,0 +1,87 @@
+---
+title: Node.js
+excerpt: >-
+  Here we will take a look on the node.js. A very popular javascript backend environment.
+date: '2021-04-20'
+thumb_image: images/nodejs_thumb.png
+thumb_image_alt: Official nodejs icon thumb
+image: images/nodejs.png
+image_alt: Official nodejs icon
+seo:
+  title: Node.js description
+  description: >-
+    Node.js is the javascript backend runtime environment.
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Node.js description
+      keyName: property
+    - name: 'og:description'
+      value: >-
+        Node.js is the javascript backend runtime environment.
+        keyName: property
+    - name: 'og:image'
+      value: images/nodejs_thumb.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Node.js description
+    - name: 'twitter:description'
+      value: >-
+        Node.js is the javascript backend runtime environment.
+        keyName: property
+    - name: 'twitter:image'
+      value: images/nodejs_thumb.png
+      relativeUrl: true
+layout: post
+---
+
+<article>
+  <h2>What the heck is Node.js</h2>
+  <p>
+    Simply put <a href="https://nodejs.org/en/">Node.js</a> allows us to execute Javascript code outside the web browser.
+    Allowing programmers to write cli applications and generate dynamic web pages or create REST APIs. It was firstly introduced in 2010.
+  </p>
+
+  <article>
+    <h3>Creator of Node.js</h3>
+    <img src="../../images/Ryan_Dahl.jpeg" alt="Ryan Dahl's photo creator of Node.js" title="Ryan Dahl">
+    <p>
+      <a href="https://en.wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a> is the original creator of the Node.js. He studied mathematics
+      but eventually get bored of it and rather wrote programs.
+    </p>
+  </article>
+  <article>
+    <h3>Node.js ecosystem</h3>
+    <dl>
+      <dt><a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8 engine</a></dt>
+      <dd>- JavaScript engine, it will execute our js code </dd>
+
+      <dt><a href="https://libuv.org">libuv</a></dt>
+      <dd>- is the asynchronous I/O library based on <a href="https://en.wikipedia.org/wiki/Event_loop">event loops</a></dd>
+
+      <dt><a href="https://www.npmjs.com">npm</a></dt>
+      <dd>- is the package manager to share code among developers (you can also use for example <a href="https://yarnpkg.com">yarn</a>)</dd>
+
+      <dt>C++ apis</dt>
+      <dd>- file system, http module, networking, zlib, cryptography etc...</dd>
+    </dl>
+  </article>
+  <article>
+    <h3>Advantages</h3>
+    <p>
+      Well as the time showed node.js is very good at handling thousands of concurrent connections and has a very little memory footprint.
+      This gives node.js a huge advantage over i.e. <a href="https://httpd.apache.org">Apache web server</a>. Which allocates a separate
+      process to handle new connection it requires more memory and time.
+    </p>
+    <p>
+      In my opinion node.js is the interesting tool to learn. You write JavaScript on your server as well as web browser. No need to compile
+      your code for hour(s). As an modern and interesting alternative could be <a href="https://deno.land">deno</a> which kinda node.js on
+      steroids and it was also created by Ryan Dahl. Happy coding in node.js.
+    </p>
+  </article>
+</article>

@@ -10,7 +10,7 @@ sections:
       [example@example.com](mailto:example@example.com).
     form_id: contactForm
     form_method: get
-    form_action: /thank-you/
+    form_action: https://formspree.io/f/xnqljwdg
     form_fields:
       - input_type: text
         name: name

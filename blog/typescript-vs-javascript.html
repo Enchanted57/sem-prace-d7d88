@@ -1,0 +1,100 @@
+---
+title: TypeScript vs JavaScript
+excerpt: >-
+  Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan
+  sapien blandit ac amet faucibus aliquet placerat commodo.
+date: '2021-04-24'
+thumb_image: images/ts-vs-js.png
+thumb_image_alt: TypeScript vs. JavaScript image
+image: images/ts-vs-js.png
+image_alt: TypeScript vs. JavaScript image
+seo:
+  title: Typescript vs. JavaScript
+  description: >-
+    A post which compares typescript and javascript
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Typescript vs. JavaScript
+      keyName: property
+    - name: 'og:description'
+      value: >-
+        A post which compares typescript and javascript
+      keyName: property
+    - name: 'og:image'
+      value: images/ts-vs-js.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: A post which compares typescript and javascript
+    - name: 'twitter:description'
+      value: >-
+        A post which compares typescript and javascript
+    - name: 'twitter:image'
+      value: images/ts-vs-js.png
+      relativeUrl: true
+layout: post
+---
+
+<article>
+  <article>
+    <h2>What is JavaScript</h2>
+    <p>
+      JavaScript (aka JS) is the general purpose programming language which was designed to use primarily in the browser.
+      It has a similar syntax to the <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C language</a> however
+      it is not statically typed and you don't have to manage resource allocation (it is done by the garbage collector).
+    </p>
+    <p>
+      The main disadvantage (for me) in JavaScript as it lacks the type checking system. Simply meaning that you can pass to the function
+      whatever you want and there is no mechanism to protect you from that.  Here is the example.
+    </p>
+
+    <div class="language-console highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code>function add(x, y) {
+  return x + y;
+}
+
+add(41, 1); // 42
+add(undefined, 1); // NaN ;)
+add(1, [4, 2, 3]); // "14,2,3" (string) ;)
+</code></pre>
+      </div>
+    </div>
+    <p>
+      As you can see above we are shooting ourselves in the foot but the compiler has no clue whether we did it intentionally or mistakenly.
+      Thus it will consider it as the valid code.
+    </p>
+  </article>
+  <article>
+    <h2>What is TypeScript</h2>
+    <p>
+      Well Typescript (aka TS) is solving the above problem by introducing the type checking system. But it is also a superset of the JS
+      meaning that a pure JavaScript is still a valid TypeScript code. Here is how it basically works.
+    </p>
+    <div class="language-console highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code>function add(x: number, y: number): number {
+  return x + y;
+}
+
+add(41, 1); // 42
+add(undefined, 1); // Error: Argument of type 'undefined' is not assignable to parameter of type 'number'.
+add(1, [4, 2, 3]); // Error: Argument of type 'number[]' is not assignable to parameter of type 'number'.
+</code></pre>
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>How can that help?</h2>
+    <p>
+      Well in bigger teams where you cannot fully know how your teammate meant to use his function. TypeScript helps to describe your
+      intentions. And if someone will not use your function the way it was not meant compiler will generate an error. And developer
+      will fix it. This benefits for the secure and robust code.
+    </p>
+  </article>
+</article>

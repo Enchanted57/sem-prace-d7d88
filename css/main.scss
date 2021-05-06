@@ -51,3 +51,9 @@ $palette: (
   font-style: italic;
   font-weight: bolder;
 }
+
+article {
+  .short-description {
+    font-style: italic;
+  }
+}

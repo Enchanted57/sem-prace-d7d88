@@ -1,0 +1,103 @@
+---
+title: Arduino Anti-barking device
+excerpt: >-
+  How I built a very simple dog anti-barking device.
+  With the help of Arduino and few other shields.
+date: '2021-04-27'
+thumb_image: images/antibark_thumb.png
+thumb_image_alt: An arduino antibark device
+image: images/antibark.png
+image_alt: An arduino antibark device
+seo:
+  title: Arduino Anti-barking device
+  description: >-
+    A very simple dog anti-barking device.
+  extra:
+    - name: 'og:type'
+      value: article
+      keyName: property
+    - name: 'og:title'
+      value: Arduino Anti-barking device
+      keyName: property
+    - name: 'og:description'
+      value: >-
+        A very simple dog anti-barking device.
+      keyName: property
+    - name: 'og:image'
+      value: images/12.jpg
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Arduino Anti-barking device
+    - name: 'twitter:description'
+      value: >-
+        A very simple dog anti-barking device.
+    - name: 'twitter:image'
+      value: images/12.jpg
+      relativeUrl: true
+layout: post
+---
+<article>
+  <h2>Anti-barking device (in czech Antištěkač)</h2>
+  <article class="short-description">
+    I would describe this device as the helper to calm down a noisy dog. If a dog barks loudly the device will
+    register noisy dog and will make a noise.
+  </article>
+  <article>
+    This project was a part of <a href="https://courses.fit.cvut.cz/BI-ARD/">BI-ARD class (authentication required)</a>.
+    I chose this topic to implement because it required quite a few external devices to use (aka <a href="https://www.arduino.cc/en/Main/arduinoShields">shields</a>)
+    <h3>Shields I used</h3>
+    <ul>
+      <li>breadboard (for easy development)</li>
+      <li>buzzer</li>
+      <li>microphone</li>
+      <li>LED light</li>
+    </ul>
+  </article>
+  <article>
+    <h3>How it actually works</h3>
+    Well as already mentioned this device will make uncomfortable noise for the loudly barking dog and will continue doing it until it's quite.
+    However if a dog i barking for too long (configurable constant) it will stop making noise (most likely the dog is barking for good reason).
+  </article>
+  <article>
+    <h4>More detailed look at shields</h4>
+    <p>Well there a lot of external shields you can use in your next arduino project. But I will have look only on 3 of them (which I used here).</p>
+    <article>
+      <h5>Buzzer</h5>
+      This shield is responsible for making a noise. You can configure the frequency on which you want to launch the sound.
+      You can have a look at <a href="https://dratek.cz/arduino/1251-bzucak-5v-2.3-khz.html">buzzer shield</a> on the shop.
+    </article>
+    <article>
+      <h5>Breadboard</h5>
+      This is the helper tool to connect your wires during the development with ease.
+      You can find a <a href="https://dratek.cz/arduino/1226-eses-nepajive-pole-400-pinu.html">breadboard</a> on the shop.
+    </article>
+    <article>
+      <h5>Microphone</h5>
+      Mic will help you to register the sound and it's loudness.
+      You can have a look at <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">Mic shield</a> on the shop.
+    </article>
+    <article>
+      <h5>LED light</h5>
+      It's simply a LED light which you can use for various sates of your device. For example in this case the red light will be activated
+      when the dog is barking. You can buy <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">the LED light</a> on the shop.
+    </article>
+  </article>
+  <article>
+    <h2>Arduino summary</h2>
+    Basically Arduino is very good tool to play with. You can create a very interesting projects with it.
+    Some examples could be the next:
+    <ul>
+      <li>Home automation</li>
+      <li>Flower self pouring device</li>
+      <li>Robot</li>
+      <li>many others...</li>
+    </ul>
+    <p>
+      In my opinion the Arduino is the great invention and it also can be used to help children to program in the very interactive and interesting fashion.
+      As always you can have a look at the <a href="https://gitlab.fit.cvut.cz/nurmaali/bi-ard-semestral-task">anti-barking device repository</a>.
+    </p>
+  </article>
+</article>
