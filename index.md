@@ -4,73 +4,70 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: 'Hi, I''m Stackbit Exto Portfolio Theme.'
+    title: 'Hi, this is my homepage'
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      Welcome to my homepage. Here you can find what I do, my blog and how to contact me.
     actions:
-      - label: Let's talk
+      - label: Write me a message
         url: /contact
         style: button
   - section_id: latest-projects
     type: section_portfolio
     layout_style: mosaic
-    title: Recent Work
-    subtitle: An optional subtitle of the section
-    projects_number: 6
+    title: Recent projects
+    subtitle: Here's few of my projects
+    projects_number: 4
     view_all_label: View All
     view_all_url: portfolio
   - section_id: services
     type: section_grid
-    title: What We Do
-    subtitle: An optional subtitle of the section
+    title: What I do
+    subtitle: my activities and services
     col_number: two
     is_numbered: true
     grid_items:
-      - title: Service Title
+      - title: University student
         content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla, fringilla.
-      - title: Service Title
+          I am studying at FIT CTU. My particular interests are web development and
+          software engineering. I am primarily on the backend services but have
+          quite a good grasp on the frontend too.
+      - title: Developer
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus.
-      - title: Service Title
+          I develop websites and automation tools. I am very interested in IoT (Internet of things).
+          Prefer to work on backend but can do almost anything on frontend as well.
+      - title: IoT
         content: >-
-          Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
-          convallis, interdum ligula vel, pretium diam. Integer commodo sem at
-          dui sollicitudin.
-      - title: Service title
+          Internet of Things is relatively new branch in computer science which I
+          really like. I also have some experience working with Arduino.
+      - title: Free time activities
         content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+          I like swimming and hiking. I read books especially focused on software
+          development but I also love reading traditional literature and my favorite
+          genre is science fiction.
   - section_id: testimonials
     type: section_testimonials
     title: Testimonials
-    subtitle: An optional subtitle of the section
+    subtitle: People said about me
     col_number: three
     testimonials:
       - author: Sean Salazar
         avatar: images/sean_salazar.jpg
         avatar_alt: Sean Salazar's photo
         content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla.
+          We were very satisfied with Ali's work. He designed a REST API for our
+          e-shop and still maintains it. Everything is up and running.
       - author: Aubrey Hoover
         avatar: images/aubrey_hoover.jpg
         avatar_alt: Aubrey Hoover's photo
         content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+          We offered a landing page for our services, everything was delivered
+          on time and is working perfectly. Good work.
       - author: Deegan Wallace
         avatar: images/deegan_wallace.jpg
         avatar_alt: Deegan Wallace's photo
         content: >-
-          Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
-          convallis, interdum ligula vel, pretium diam.
+          Ali helped me to develop smart home utilities and now I can control my
+          home lights and heating system with my phone.
   - section_id: latest-posts
     type: section_posts
     title: Latest from the Blog
