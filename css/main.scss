@@ -57,3 +57,12 @@ article {
     font-style: italic;
   }
 }
+
+/*
+ * prevents cyclic reference
+ */
+.current-menu-item {
+  pointer-events: none;
+  font-weight: bold;
+  text-decoration: underline;
+}

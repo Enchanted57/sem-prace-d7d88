@@ -1,5 +1,5 @@
 ---
-title: The Advantages and Disadvantages of Working from Home
+title: Remote work
 excerpt: >-
   Post about pros and cons of working from home or in office.
 date: '2021-03-21'

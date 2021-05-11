@@ -1,5 +1,5 @@
 ---
-title: Home
+title: nurmaali
 hide_title: true
 sections:
   - section_id: hero
@@ -79,14 +79,14 @@ sections:
         url: blog
         style: button
 seo:
-  title: Stackbit Exto Theme
+  title: nurmaali
   description: The preview of the Exto theme
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Exto Theme
+      value: nurmaali
       keyName: property
     - name: 'og:description'
       value: The preview of the Exto theme
@@ -98,7 +98,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Exto Theme
+      value: nurmaali
     - name: 'twitter:description'
       value: The preview of the Exto theme
     - name: 'twitter:image'
