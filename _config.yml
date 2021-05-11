@@ -4,8 +4,8 @@ permalink: '/:title/'
 collections:
   posts:
     permalink: '/posts/:title/'
-color_scheme: light
-accent_color: pink
+color_scheme: dark
+accent_color: green
 header:
   title: nurmaali
   has_nav: true
