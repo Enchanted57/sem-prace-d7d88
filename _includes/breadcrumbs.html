@@ -1,6 +1,6 @@
 <nav id="breadcrumbs">
 	{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-	<!-- todo: insert base url here-->
+
 	{% if page.title != "nurmaali" %}
 		<a href="{{ '/' | relative_url }}">nurmaali</a>
 	{% else %}
@@ -10,7 +10,15 @@
 	{% if forloop.last %}
 	/ {{ page.title }}
 	{% else %}
-	/ <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+
+	{% assign crumb_limit = forloop.index | plus: 1 %}
+	{% assign tmp = '' %}
+	{% for crumb in crumbs limit: crumb_limit %}
+		{% assign tmp = tmp | append: crumb | append: '/' %}
+	{% endfor %}
+	/ <a href="{{ tmp | prepend: site.baseurl | replace: '//','/' }}">{{ tmp | replace: '/', '' | replace:'-',' ' | remove:'.html' | capitalize }}</a>
 	{% endif %}
 	{% endfor %}
 </nav>
+<!-- | prepend: site.baseurl -->
+<!-- {{ crumb | append: '/'  }} -->
