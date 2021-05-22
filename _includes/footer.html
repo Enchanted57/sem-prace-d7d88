@@ -1,5 +1,26 @@
 <footer id="colophon" class="site-footer outer">
   <div class="inner">
+    <form
+            name="searchContentForm"
+            id="searchContentForm_1"
+            action="{{ '/search' | relative_url }}"
+            method="GET"
+            class="search-form"
+    >
+      <div class="form-group">
+        <label for="search_content_term" hidden>Search term</label>
+        <input type="text" name="search_content_term" id="search_content_term" placeholder="Search on this site" />
+        <span class="animate-border" aria-hidden="true"></span>
+      </div>
+      <div class="form-submit" id="search-submit">
+        <button type="submit" class="button">Find</button>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="inner">
     <div class="site-footer-inside">
       <div class="site-info">
         {% assign content_is_not_empty = site.footer.content | is_not_empty %}
@@ -22,4 +43,5 @@
       {% endif %}
     </div><!-- .site-footer-inside -->
   </div><!-- .inner -->
+
 </footer><!-- .site-footer -->
