@@ -70,3 +70,7 @@ article {
 #search-submit {
   margin-top: 1.4em;
 }
+
+ol.capitalize > li:first-letter {
+  text-transform: capitalize;
+}
