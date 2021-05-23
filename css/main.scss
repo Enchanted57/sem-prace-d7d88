@@ -74,3 +74,15 @@ article {
 ol.capitalize > li:first-letter {
   text-transform: capitalize;
 }
+
+p > a.current-home {
+  pointer-events: none;
+}
+
+.disable-links {
+  pointer-events: none;
+}
+
+#breadcrumbs {
+  margin-top: 1em;
+}
