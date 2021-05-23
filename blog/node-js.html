@@ -41,10 +41,14 @@ layout: post
 ---
 
 <article>
-  <h2>What the heck is Node.js</h2>
+  <h2>What is the node.js</h2>
   <p>
-    Simply put <a href="https://nodejs.org/en/">Node.js</a> allows us to execute Javascript code outside the web browser.
+    Simply put <a href="https://nodejs.org/en/">node.js</a> allows us to execute Javascript code outside the web browser.
     Allowing programmers to write cli applications and generate dynamic web pages or create REST APIs. It was firstly introduced in 2010.
+  </p>
+  <p>
+    But node.js is primarily used as web server. It allows to handle tens of thousands concurrent connections very effectively.
+    It can be achieved thanks to so called <a href="https://en.wikipedia.org/wiki/Event_loop">event loop</a>.
   </p>
 
   <article>
@@ -54,9 +58,18 @@ layout: post
       <a href="https://en.wikipedia.org/wiki/Ryan_Dahl">Ryan Dahl</a> is the original creator of the Node.js. He studied mathematics
       but eventually get bored of it and rather wrote programs.
     </p>
+    <p>
+      He stated that using event loops is much more effective than traditional thread per connection approach. Which proved to be true.
+      For example there is <a href="https://dev.to/emiliosp/nodejs-vs-apache-performance-battle-for-the-conquest-of-my-5c4n">benchmark</a>
+      which compares node.js to Apache web server.
+    </p>
   </article>
   <article>
     <h3>Node.js ecosystem</h3>
+    <p>
+      Let's have a look on the technologies the node.js is build upon. It's written in C++ programming language and it uses some well-known
+      open-source solutions.
+    </p>
     <dl>
       <dt><a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8 engine</a></dt>
       <dd>- JavaScript engine, it will execute our js code </dd>
