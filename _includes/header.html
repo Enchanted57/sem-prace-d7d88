@@ -44,8 +44,14 @@
               {% assign pageUrl = page.url | trim: '/' %}
               {% assign actionUrl = action.url | trim: '/' %}
               <li class="menu-item{% if pageUrl == actionUrl %} current-menu-item{% endif %}{% if action.style != 'link' %} menu-button{% endif %}">
-                
-                {% include action.html action=action %}
+                {% if pageUrl == actionUrl %}
+                  {{ actionUrl | replace: '/', '' | capitalize }}
+                  {% if pageUrl == site.baseurl %}
+                    Home
+                  {% endif %}
+                {% else %}
+                  {% include action.html action=action %}
+                {% endif %}
               </li>
             {% endfor %}
           </ul><!-- .menu -->
