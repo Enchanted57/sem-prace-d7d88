@@ -1,10 +1,12 @@
-<nav id="breadcrumbs">
+<nav class="capitalize-text" id="breadcrumbs">
+	<ol>
+
 	{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
 	{% if page.title != "nurmaali" %}
-		<a href="{{ '/' | relative_url }}">nurmaali</a>
+		<li><a href="{{ '/' | relative_url }}">home</a></li>
 	{% else %}
-		nurmaali
+		home
 	{% endif %}
 	{% for crumb in crumbs offset: 1 %}
 	{% if forloop.last %}
@@ -16,9 +18,12 @@
 	{% for crumb in crumbs limit: crumb_limit %}
 		{% assign tmp = tmp | append: crumb | append: '/' %}
 	{% endfor %}
-	/ <a href="{{ tmp | prepend: site.baseurl | replace: '//','/' }}">{{ tmp | replace: '/', '' | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+	/ <li><a href="{{ tmp | prepend: site.baseurl | replace: '//','/' }}">{{ tmp | replace: '/', '' | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
 	{% endif %}
 	{% endfor %}
+
+	</ol>
+
 </nav>
 <!-- | prepend: site.baseurl -->
 <!-- {{ crumb | append: '/'  }} -->
