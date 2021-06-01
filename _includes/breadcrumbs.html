@@ -6,7 +6,7 @@
 	{% if page.title != "nurmaali" %}
 		<li><a href="{{ '/' | relative_url }}">home</a></li>
 	{% else %}
-		home
+		<li>home</li>
 	{% endif %}
 	{% for crumb in crumbs offset: 1 %}
 	{% if forloop.last %}

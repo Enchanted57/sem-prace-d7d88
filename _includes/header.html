@@ -18,11 +18,13 @@
         {% else %}
 
         {% if logo_img_is_not_empty %}
-        <p class="site-logo disable-links">
+        <p class="site-logo">
           <img src="{{ site.header.logo_img | relative_url }}" alt="{{ site.header.logo_img_alt }}" />
         </p>
         {% else %}
-          <p class="site-title disable-links">{{ site.header.title }}</p>
+          <p class="site-title site-logo">
+            <span>{{ site.header.title }}</span>
+          </p>
         {% endif %}
 
         {% endif %}
@@ -46,7 +48,7 @@
               <li class="menu-item{% if pageUrl == actionUrl %} current-menu-item{% endif %}{% if action.style != 'link' %} menu-button{% endif %}">
                 {% if pageUrl == actionUrl %}
                   {{ actionUrl | replace: '/', '' | capitalize }}
-                  {% if pageUrl == site.baseurl %}
+                  {% if page.title == "nurmaali" %}
                     Home
                   {% endif %}
                 {% else %}
