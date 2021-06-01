@@ -25,12 +25,12 @@ textarea {
   border-color: _palette(charcoal-light-75);
   border-radius: 0;
   border-style: solid;
-  border-width: 0 0 2px;
+  border-width: 0 0 0.1em;
   box-shadow: none;
   box-sizing: border-box;
   color: inherit;
   display: block;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.5;
   max-width: 100%;
@@ -57,7 +57,7 @@ option {
   .animate-border {
     bottom: 0;
     background: _palette(accent);
-    height: 2px;
+    height: 0.1em;
     left: 0;
     position: absolute;
     -webkit-transition: width .3s;
@@ -94,13 +94,13 @@ option {
 }
 
 .form-select-wrap {
-  font-size: 16px;
+  font-size: 1em;
   position: relative;
 
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding-right: 20px;
+    padding-right: 1.2em;
   }
 
   &:before,
@@ -110,7 +110,7 @@ option {
     box-sizing: border-box;
     content: "";
     position: absolute;
-    right: 5px;
+    right: 0.3em;
     top: 50%;
     z-index: 1;
   }
@@ -135,7 +135,7 @@ option {
 }
 
 .form-checkbox {
-  padding-left: 24px;
+  padding-left: 1.1em;
   position: relative;
 
   label {
