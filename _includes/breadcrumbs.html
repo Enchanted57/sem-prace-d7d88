@@ -10,7 +10,7 @@
 	{% endif %}
 	{% for crumb in crumbs offset: 1 %}
 	{% if forloop.last %}
-	/ {{ page.title }}
+	/ <li>{{ page.title }}</li>
 	{% else %}
 
 	{% assign crumb_limit = forloop.index | plus: 1 %}
