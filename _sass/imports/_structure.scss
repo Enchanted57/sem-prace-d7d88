@@ -6,6 +6,11 @@
   padding-right: 3vw;
 }
 
+/**
+ * this set of classes ensures there max width
+ * to have free space on the edges
+ * it's very hard to find optimal relative unit equivalent
+ */
 .inner {
   margin-left: auto;
   margin-right: auto;
