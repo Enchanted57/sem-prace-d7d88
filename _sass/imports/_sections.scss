@@ -47,10 +47,10 @@
   margin-bottom: 0.83333em;
 
   a {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 0.9375em;
-    margin-right: 20px;
+    margin-right: 1em;
 
     &:not(.button) {
       border: 0;
@@ -73,7 +73,7 @@
 
   &:before,
   &:after {
-    border: 2px solid _palette(charcoal-light-75);
+    border: 0.1em solid _palette(charcoal-light-75);
     box-sizing: border-box;
     content: "";
     height: 35%;
@@ -122,7 +122,7 @@
   box-sizing: border-box;
   color: _palette(accent);
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1.2;
   padding: 0.9em 1em;
@@ -151,7 +151,7 @@
 
   &:before,
   &:after {
-    border: 2px solid _palette(accent);
+    border: 0.2em solid _palette(accent);
     box-sizing: border-box;
     content: "";
     height: 32%;
@@ -236,9 +236,9 @@
 
 .testimonial-avatar {
   border-radius: 50%;
-  height: 60px;
+  height: 3em;
   margin-right: 0.83333em;
-  width: 60px;
+  width: 3em;
 }
 
 .testimonial-author {
