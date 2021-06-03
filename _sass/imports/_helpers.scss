@@ -75,10 +75,10 @@
   position: relative;
 
   &:before {
-    border-left: 45px solid _palette(accent);
+    border-left: 2.5em solid _palette(accent);
     content: "";
     display: block;
-    height: 3px;
+    height: 0.1em;
     margin-bottom: 0.83333rem;
 
     .accent-green & {
