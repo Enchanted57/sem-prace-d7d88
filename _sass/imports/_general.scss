@@ -27,7 +27,7 @@ body {
 }
 
 a {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 0.1em solid currentColor;
   color: _palette(accent);
   text-decoration: none;
   -webkit-transition: .3s ease;
@@ -129,7 +129,7 @@ mark,
 ins {
   background: #fff493;
   color: _palette(charcoal);
-  padding: 0 3px;
+  padding: 0 0.1em;
   text-decoration: none;
 }
 
@@ -246,7 +246,7 @@ li > ol {
 
 hr {
   border: 0;
-  border-bottom: 1px solid _palette(charcoal-light-75);
+  border-bottom: 0.1em solid _palette(charcoal-light-75);
   margin: 2.5em 0;
 
   .palette-dark & {
@@ -275,8 +275,8 @@ caption {
 
 th,
 td {
-  border-bottom: 1px solid _palette(charcoal-light-75);
-  padding: 0.5em 5px;
+  border-bottom: 0.1em solid _palette(charcoal-light-75);
+  padding: 0.5em 0.4em;
 
   .palette-dark & {
     border-bottom-color: _palette(charcoal-light-7);
