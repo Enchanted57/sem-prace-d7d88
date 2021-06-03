@@ -2,7 +2,7 @@
  * Site Header
  */
 .site-header {
-  border-bottom: 1px solid _palette(charcoal-light-75);
+  border-bottom: 0.1em solid _palette(charcoal-light-75);
   padding-bottom: 1em;
   padding-top: 1em;
 
@@ -77,7 +77,7 @@
 }
 
 .menu-item {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.2;
 
   &.current-menu-item {
@@ -128,6 +128,10 @@
   }
 }
 
+/**
+ * leave absolute units as it is.
+ * Controls hamburger menu on mobile version.
+ */
 #menu-open,
 #menu-close {
   background: 0;
@@ -164,7 +168,7 @@
   }
 
   .menu-item {
-    margin-left: 25px;
+    margin-left: 2em;
 
     .button {
       padding: 0.275em 0.5em;
@@ -206,7 +210,8 @@
     box-sizing: border-box;
     bottom: 0;
     margin: 0;
-    max-width: 360px;
+    // width of hamburger menu
+    max-width: 20em;
     -webkit-overflow-scrolling: touch;
     position: fixed;
     right: -100%;
@@ -241,7 +246,7 @@
   }
 
   .menu-item {
-    border-top: 1px solid _palette(charcoal-light-75);
+    border-top: 0.1em solid _palette(charcoal-light-75);
     display: block;
 
     .palette-dark & {
@@ -249,7 +254,7 @@
     }
 
     &:not(.menu-button):last-child {
-      border-bottom: 1px solid _palette(charcoal-light-75);
+      border-bottom: 0.1em solid _palette(charcoal-light-75);
 
       .palette-dark & {
         border-bottom-color: _palette(charcoal-light-7);
