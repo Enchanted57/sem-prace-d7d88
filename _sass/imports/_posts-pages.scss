@@ -33,7 +33,7 @@
 .post-meta {
   color: _palette(charcoal-light-40);
   font-size: 0.88889em;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   .palette-dark & {
@@ -110,7 +110,7 @@
       }
 
       .post-meta {
-        font-size: 14px;
+        font-size: 0.8em;
       }
     }
   }
@@ -124,7 +124,7 @@
       }
 
       .post-meta {
-        font-size: 14px;
+        font-size: 0.8em;
       }
     }
   }
