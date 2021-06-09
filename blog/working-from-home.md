@@ -33,6 +33,8 @@ seo:
       relativeUrl: true
 layout: post
 ---
+[comment]: <> (source of article)
+[comment]: <> (https://www.thebalancesmb.com/the-pros-and-cons-of-working-from-home-2951766)
 
 ## Let's have a look on pros and cons of working from home
 Whether you are a home-based small business owner who works from home full time, or someone who splits his or her time by working from home occasionally, there are a number of pros and cons to consider before you set up a home office and plan your work environment.
