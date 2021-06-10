@@ -10,7 +10,7 @@
 	{% endif %}
 	{% for crumb in crumbs offset: 1 %}
 	{% if forloop.last %}
-	/ <li>{{ page.title }}</li>
+	<li>/ {{ page.title }}</li>
 	{% else %}
 
 	{% assign crumb_limit = forloop.index | plus: 1 %}
@@ -18,7 +18,7 @@
 	{% for crumb in crumbs limit: crumb_limit %}
 		{% assign tmp = tmp | append: crumb | append: '/' %}
 	{% endfor %}
-	/ <li><a href="{{ tmp | prepend: site.baseurl | replace: '//','/' }}">{{ tmp | replace: '/', '' | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+	<li>/ <a href="{{ tmp | prepend: site.baseurl | replace: '//','/' }}">{{ tmp | replace: '/', '' | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
 	{% endif %}
 	{% endfor %}
 
