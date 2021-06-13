@@ -1,6 +1,7 @@
 title: nurmaali
 baseurl: /
 #baseurl: /B202/nurmaali/_site
+#baseurl: /B202/nurmaali-sem/
 permalink: '/:title/'
 collections:
   posts:
