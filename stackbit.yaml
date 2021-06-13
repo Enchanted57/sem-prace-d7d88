@@ -209,7 +209,7 @@ models:
     urlPath: /blog
     label: Blog
     layout: blog
-    file: blog/index.md
+    file: blog/index.html
     hideContent: true
     singleInstance: true
     fields:
@@ -244,7 +244,7 @@ models:
     urlPath: /portfolio
     label: Portfolio
     layout: portfolio
-    file: portfolio/index.md
+    file: portfolio/index.html
     hideContent: true
     singleInstance: true
     fields:

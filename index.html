@@ -1,0 +1,253 @@
+---
+title: nurmaali
+layout: body
+---
+<section id="introduction" class="inner">
+    <div class="block-header">
+        <h1 class="block-title">Alisher Nurmatov</h1>
+        <p>
+            Computer science student, part-time programmer, IoT enthusiast...
+        </p>
+    </div>
+    <div class="block-content">
+        <a href="{{'/contact' | relative_url }}" class="button">
+            Write me a message
+        </a>
+    </div>
+</section>
+<section id="about-me" class="block block-grid outer">
+    <div class="inner">
+        <div class="block-header inner-sm">
+            <h2 class="block-title line-top">About me</h2>
+            <p class="block-subtitle">Here short info about me</p>
+        </div>
+        <div class="block-content">
+            <div class="grid grid-col-2">
+                <div class="grid-item">
+                    <img src="{{ 'images/developer.png' | relative_url }}" alt="my-photo" title="it's me">
+                </div>
+                <div class="grid-item">
+                    <p>
+                        My name is Alisher Nurmatov and I am <strong>computer science student</strong> at
+                        <a href="https://www.fit.cvut.cz">Faculty of Information Technology</a> in Prague.
+                        And my planned final year is 2022.
+                    </p>
+                    <p>
+                        I am a part time freelance programmer specializing in web development and especially backend part.
+                        My favorite technologies are <a href="{{ '/blog/node-js' | relative_url }}">node.js</a> and C++.
+                    </p>
+                    <p>
+                        I am from Czech Republic and living in Prague.
+                        But I love travelling and explore new places around the globe.
+                    </p>
+                    <p>
+                        Here I write about my recent projects and interesting technologies to me.
+                        I write blog about tech and productivity, I hope you enjoy my content.
+                    </p>
+                    <div>
+                        <a href="{{ '/about' | relative_url }}">more about me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="latest-projects" class="block-portfolio block outer">
+    <div class="inner">
+        <div class="block-header inner-sm">
+            <h2 class="block-title line-top">Recent projects</h2>
+            <p>
+                Have a look at my recent projects. I don't like to be tied to one technology.
+                So I always try to learn essentials and theory behind it and use technology as a tool.
+            </p>
+        </div>
+        <div class="block-content">
+            <div class="portfolio-feed layout-mosaic">
+                <article class="project">
+                    <a href="{{ '/portfolio/homepage-project/' | relative_url }}" class="project-link">
+                        <div class="project-thumbnail">
+                            <img src="{{ '/images/homepage_thumb.jpg' | relative_url }}" alt="image of house in the program window" />
+                        </div>
+                        <header class="project-header">
+                            <h3 class="project-title">My homepage</h3>
+                        </header>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="{{ '/portfolio/webserver-project/' | relative_url }}" class="project-link">
+                        <div class="project-thumbnail">
+                            <img src="{{ '/images/webserver_thumb.jpg' | relative_url }}" alt="A computer server image" />
+                        </div>
+                        <header class="project-header">
+                            <h3 class="project-title">Web server</h3>
+                        </header>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="{{ '/portfolio/chatapp-project/' | relative_url}}" class="project-link">
+                        <div class="project-thumbnail">
+                            <img src="{{ '/images/chatapp_thumb.png' | relative_url }}" alt="Chat application logo" />
+                        </div>
+                        <header class="project-header">
+                            <h3 class="project-title">Chat application</h3>
+                        </header>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="{{ '/portfolio' | relative_url }}" class="project-link view-all-link">
+                        <div class="project-thumbnail">
+                            <img src="{{ '/images/uml_editor.jpg' | relative_url }}" alt="A uml editor program screenshot image" />
+                        </div>
+                        <span class="view-all-button">View All</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="block block-testimonials outer">
+    <div class="inner">
+        <div class="block-header inner-sm">
+            <h2 class="block-title line-top">Testimonials</h2>
+            <p class="block-subtitle">People said about me</p>
+        </div>
+        <div class="block-content">
+            <div class="grid grid-col-3">
+                <div class="grid-item">
+                    <blockquote class="testimonial">
+                        <p class="testimonial-content">
+                            We were very satisfied with Ali's work. He designed a REST API for our e-shop and still maintains it. Everything is up and running.
+                        </p>
+                        <footer class="testimonial-footer">
+                            <img class="testimonial-avatar" src="{{ '/images/sean_salazar.jpg' | relative_url }}" alt="Sean Salazar's photo">
+                            <cite class="testimonial-author">Sean Salazar</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="grid-item">
+                    <blockquote class="testimonial">
+                        <p class="testimonial-content">
+                            We offered a landing page for our services, everything was delivered on time and is working perfectly. Good work.
+                        </p>
+                        <footer class="testimonial-footer">
+                            <img class="testimonial-avatar" src="{{ '/images/aubrey_hoover.jpg' | relative_url }}" alt="Aubrey Hoover's photo">
+                            <cite class="testimonial-author">Aubrey Hoover</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="grid-item">
+                    <blockquote class="testimonial">
+                        <p class="testimonial-content">
+                            Ali helped me to develop smart home utilities and now I can control my home lights and heating system with my phone.
+                        </p>
+                        <footer class="testimonial-footer">
+                            <img class="testimonial-avatar" src="{{ '/images/deegan_wallace.jpg' | relative_url }}" alt="Deegan Wallace's photo">
+                            <cite class="testimonial-author">Deegan Wallace</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="latest-posts" class="block block-posts outer">
+    <div class="inner">
+        <div class="block-header inner-sm">
+            <h2 class="block-title line-top">Latest from the Blog</h2>
+            <p class="block-subtitle">See also my blog posts</p>
+        </div>
+        <div class="block-content">
+            <div class="post-feed grid grid-col-3">
+                <article class="post grid-item">
+                    <div class="post-inside">
+                        <a class="post-thumbnail" href="{{ '/blog/arduino-project/' | relative_url }}">
+                            <img src="{{ '/images/antibark_thumb.png' | relative_url }}" alt="An arduino antibark device" />
+                        </a>
+                        <header class="post-header">
+                            <h3 class="post-title">
+                                <a href="{{ '/blog/arduino-project/' | relative_url }}" rel="bookmark">Arduino Anti-barking device</a>
+                            </h3>
+                            <div class="post-meta">
+                                <time class="published" datetime="2021-04-27 00:00">April 27, 2021</time>
+                            </div>
+                        </header>
+                        <p class="post-content">
+                            How I built a very simple dog anti-barking device. With the help of Arduino and few other shields.
+                        </p>
+                    </div>
+                </article>
+                <article class="post grid-item">
+                    <div class="post-inside">
+                        <a class="post-thumbnail" href="{{ '/blog/typescript-vs-javascript/' | relative_url }}">
+                            <img src="{{ '/images/ts-vs-js.png' | relative_url }}" alt="TypeScript vs. JavaScript image" />
+                        </a>
+                        <header class="post-header">
+                            <h3 class="post-title">
+                                <a href="{{ '/blog/typescript-vs-javascript/' | relative_url }}" rel="bookmark">
+                                    TypeScript vs JavaScript
+                                </a>
+                            </h3>
+                            <div class="post-meta">
+                                <time class="published" datetime="2021-04-24 00:00">April 24, 2021</time>
+                            </div>
+                        </header>
+                        <p class="post-content">
+                            We shall have a look at differences between TypeScript and JavaScript and look at advantages.
+                        </p>
+                    </div>
+                </article>
+                <article class="post grid-item">
+                    <div class="post-inside">
+                        <a class="post-thumbnail" href="{{ '/blog/node-js/' | relative_url }}">
+                            <img src="{{ '/images/nodejs_thumb.png' | relative_url }}" alt="Official nodejs icon thumb" />
+                        </a>
+                        <header class="post-header">
+                            <h3 class="post-title">
+                                <a href="{{ '/blog/node-js/' | relative_url }}" rel="bookmark">Node.js</a>
+                            </h3>
+                            <div class="post-meta">
+                                <time class="published" datetime="2021-04-20 00:00">April 20, 2021</time>
+                            </div>
+                        </header>
+                        <p class="post-content">
+                            Here we will take a look on the node.js. A very popular javascript backend environment.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="block-buttons inner-sm">
+            <a href="{{ '/blog' | relative_url }}"
+               class="button"
+            >
+                View Blog
+            </a>
+        </div>
+    </div>
+</section>
+<section id="contact-info" class="block block-grid outer">
+    <div class="inner">
+        <div class="block-header inner-sm">
+            <h2 class="block-title line-top">How to contact me</h2>
+            <p class="block-subtitle">Get in touch with me</p>
+        </div>
+        <div class="block-content">
+            <div class="grid grid-col-2">
+                <div class="grid-item">
+                    <img src="{{ 'images/contact-me.png' | relative_url }}" alt="my-photo" title="it's me">
+                </div>
+                <div class="grid-item">
+                    <p>
+                        If you like my content or have ideas how to improve it,
+                        or you have some work opportunity for me.
+                        Please feel free to contact me via e-mail.
+                        I would love to read your feedback or work offer.
+                    </p>
+                    <div>
+                        <a href="{{ '/contact' | relative_url }}">contact me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
