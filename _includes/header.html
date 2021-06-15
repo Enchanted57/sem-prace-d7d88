@@ -3,10 +3,7 @@
     <div class="site-header-inside">
       <div class="site-branding">
         {% assign logo_img_is_not_empty = site.header.logo_img | is_not_empty %}
-
-
         {% if page.title != "nurmaali" %}
-
           {% if logo_img_is_not_empty %}
             <p class="site-logo">
               <a href="{{ '/' | relative_url }}"><img src="{{ site.header.logo_img | relative_url }}" alt="{{ site.header.logo_img_alt }}" /></a>
@@ -14,9 +11,7 @@
           {% else %}
             <p class="site-title"><a href="{{ '/' | relative_url }}">{{ site.header.title }}</a></p>
           {% endif %}
-
         {% else %}
-
         {% if logo_img_is_not_empty %}
         <p class="site-logo">
           <img src="{{ site.header.logo_img | relative_url }}" alt="{{ site.header.logo_img_alt }}" />
@@ -26,15 +21,8 @@
             <span>{{ site.header.title }}</span>
           </p>
         {% endif %}
-
         {% endif %}
-
-
-
-
-
       </div><!-- .site-branding -->
-
       {% assign has_nav_is_not_empty = site.header.has_nav | is_not_empty %}
       {% if has_nav_is_not_empty %}
       <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
@@ -45,16 +33,19 @@
             {% for action in site.header.nav_links %}
               {% assign pageUrl = page.url | trim: '/' %}
               {% assign actionUrl = action.url | trim: '/' %}
-              <li class="menu-item{% if pageUrl == actionUrl %} current-menu-item{% endif %}{% if action.style != 'link' %} menu-button{% endif %}">
-                {% if pageUrl == actionUrl %}
-                  {{ actionUrl | replace: '/', '' | capitalize }}
+              {% assign tmp = actionUrl | replace: '/', '' | capitalize %}
+              {% if tmp != '' %}
+                <li class="menu-item{% if pageUrl == actionUrl %} current-menu-item{% endif %}{% if action.style != 'link' %} menu-button{% endif %}">
+                  {% if pageUrl == actionUrl %}
+                    {{ tmp }}
                   {% if page.title == "nurmaali" %}
                     Home
                   {% endif %}
-                {% else %}
-                  {% include action.html action=action %}
-                {% endif %}
-              </li>
+                  {% else %}
+                    {% include action.html action=action %}
+                  {% endif %}
+                </li>
+              {% endif %}
             {% endfor %}
           </ul><!-- .menu -->
         </div><!-- .site-nav-inside -->
@@ -62,9 +53,7 @@
       {% endif %}
     </div><!-- .site-header-inside -->
   </div><!-- .inner -->
-
   <div class="inner">
     {% include breadcrumbs.html %}
   </div>
-
 </header><!-- .site-header -->
