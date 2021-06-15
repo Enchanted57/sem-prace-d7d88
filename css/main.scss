@@ -95,6 +95,12 @@ p > a.current-home {
     li {
       display: inline;
     }
+
+    li:not(:first-of-type) {
+      &::before {
+        content: '/ ';
+      }
+    }
   }
 }
 
