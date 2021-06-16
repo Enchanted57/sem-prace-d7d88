@@ -107,3 +107,12 @@ p > a.current-home {
 .capitalize-text {
   text-transform: capitalize;
 }
+
+@media print {
+  #main-navigation {
+    display: none;
+  }
+  #searchContentForm_1 {
+    display: none;
+  }
+}
