@@ -1,6 +1,6 @@
 ---
 title: Blog
-subtitle: 'News, tips and highlights'
+subtitle: 'I write blog about my favorite tech and productivity. You will find posts about what I built, and my experience.'
 hide_title: false
 col_number: three
 seo:
