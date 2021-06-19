@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-subtitle: This is my projects portfolio enjoy reading.
+subtitle: This is my projects portfolio. These are my most favorites and memorable, enjoy reading.
 layout_style: mosaic
 seo:
   title: Portfolio
