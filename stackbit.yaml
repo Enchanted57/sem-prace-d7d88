@@ -239,12 +239,12 @@ models:
         name: seo
         models:
           - stackbit_page_meta
-  portfolio:
+  projects:
     type: page
-    urlPath: /portfolio
-    label: Portfolio
-    layout: portfolio
-    file: portfolio/index.html
+    urlPath: /projects
+    label: Projects
+    layout: projects
+    file: projects/index.html
     hideContent: true
     singleInstance: true
     fields:
@@ -260,7 +260,7 @@ models:
       - type: enum
         name: layout_style
         label: Layout Style
-        description: The style of the portfolio layout.
+        description: The style of the projects layout.
         options:
           - mosaic
           - tiles
@@ -275,7 +275,7 @@ models:
     layout: page
     exclude:
       - blog/**
-      - portfolio/**
+      - projects/**
     fields:
       - type: string
         name: title
@@ -344,10 +344,10 @@ models:
           - stackbit_page_meta
   project:
     type: page
-    urlPath: '/portfolio/{slug}'
+    urlPath: '/projects/{slug}'
     label: Project
     layout: project
-    folder: portfolio
+    folder: projects
     fields:
       - type: string
         name: title
@@ -365,11 +365,11 @@ models:
       - type: image
         name: thumb_image
         label: Image (Portfolio)
-        description: The image shown in the portfolio page.
+        description: The image shown in the projects page.
       - type: string
         name: thumb_image_alt
         label: Image Alt Text (Portfolio)
-        description: The alt text of the portfolio page image.
+        description: The alt text of the projects page image.
       - type: image
         name: image
         label: Image (Single Project)

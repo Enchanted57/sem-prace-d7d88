@@ -1,19 +1,19 @@
 ---
-title: Portfolio
-subtitle: This is my projects portfolio. These are my most favorites and memorable, enjoy reading.
+title: Projects
+subtitle: This is my projects page. These are my most favorites and memorable, enjoy reading.
 layout_style: mosaic
 seo:
-  title: Portfolio
-  description: This is the portfolio page
+  title: Projects
+  description: This is the projects page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Portfolio
+      value: Projects
       keyName: property
     - name: 'og:description'
-      value: This is the portfolio page
+      value: This is the projects page
       keyName: property
     - name: 'og:image'
       value: images/1.jpg
@@ -22,9 +22,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Portfolio
+      value: Projects
     - name: 'twitter:description'
-      value: This is the portfolio page
+      value: This is the projects page
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
