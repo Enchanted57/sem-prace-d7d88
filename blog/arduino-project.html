@@ -42,54 +42,53 @@ layout: post
 ---
 <article>
   <h2>Anti-barking device (in czech Antištěkač)</h2>
-  <article class="short-description">
+  <p class="short-description">
     I would describe this device as the helper to calm down a noisy dog. If a dog barks loudly the device will
     register noisy dog and will make a noise.
-  </article>
-  <article>
+  </p>
+  <p>
     This project was a part of <a href="https://courses.fit.cvut.cz/BI-ARD/">BI-ARD class (authentication required)</a>.
     I chose this topic to implement because it required quite a few external devices to use (aka <a href="https://www.arduino.cc/en/Main/arduinoShields">shields</a>)
-    <h3>Shields I used</h3>
-    <ul>
-      <li>breadboard (for easy development)</li>
-      <li>buzzer</li>
-      <li>microphone</li>
-      <li>LED light</li>
-    </ul>
-  </article>
+  </p>
+  <p>Shields I used in this arduino project:</p>
+  <ul>
+    <li>breadboard (for easy development)</li>
+    <li>buzzer</li>
+    <li>microphone</li>
+    <li>LED light</li>
+  </ul>
   <article>
-    <h3>How it actually works</h3>
-    Well as already mentioned this device will make uncomfortable noise for the loudly barking dog and will continue doing it until it's quite.
-    However if a dog i barking for too long (configurable constant) it will stop making noise (most likely the dog is barking for good reason).
-  </article>
-  <article>
-    <h4>More detailed look at shields</h4>
-    <p>Well there a lot of external shields you can use in your next arduino project. But I will have look only on 3 of them (which I used here).</p>
-    <article>
-      <h5>Buzzer</h5>
-      This shield is responsible for making a noise. You can configure the frequency on which you want to launch the sound.
-      You can have a look at <a href="https://dratek.cz/arduino/1251-bzucak-5v-2.3-khz.html">buzzer shield</a> on the shop.
-    </article>
-    <article>
-      <h5>Breadboard</h5>
-      This is the helper tool to connect your wires during the development with ease.
-      You can find a <a href="https://dratek.cz/arduino/1226-eses-nepajive-pole-400-pinu.html">breadboard</a> on the shop.
-    </article>
-    <article>
-      <h5>Microphone</h5>
-      Mic will help you to register the sound and it's loudness.
-      You can have a look at <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">Mic shield</a> on the shop.
-    </article>
-    <article>
-      <h5>LED light</h5>
-      It's simply a LED light which you can use for various sates of your device. For example in this case the red light will be activated
-      when the dog is barking. You can buy <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">the LED light</a> on the shop.
-    </article>
+    <h2>How it actually works</h2>
+    <p>
+      Well as already mentioned this device will make uncomfortable noise for the loudly barking dog and will continue doing it until it's quite.
+      However if a dog i barking for too long (configurable constant) it will stop making noise (most likely the dog is barking for good reason).
+    </p>
+    <p>Les't have a detailed look at the shields I used here:</p>
+    <dl>
+      <dt>Buzzer</dt>
+      <dd>- This shield is responsible for making a noise. You can configure the frequency on which you want to launch the sound.
+        You can have a look at <a href="https://dratek.cz/arduino/1251-bzucak-5v-2.3-khz.html">buzzer shield</a> on the shop.
+      </dd>
+      <dt>Breadboard</dt>
+      <dd>- This is the helper tool to connect your wires during the development with ease.
+        You can find a <a href="https://dratek.cz/arduino/1226-eses-nepajive-pole-400-pinu.html">breadboard</a> on the shop.
+      </dd>
+      <dt>Microphone</dt>
+      <dd>- Mic will help you to register the sound and it's loudness.
+        You can have a look at <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">Mic shield</a> on the shop.
+      </dd>
+      <dt>LED light</dt>
+      <dd>- It's simply a LED light which you can use for various sates of your device. For example in this case the red light will be activated
+        when the dog is barking. You can buy <a href="https://dratek.cz/arduino/1358-eses-modul-mikrofonu-pro-jednodeskove-pocitace.html">the LED light</a> on the shop.
+      </dd>
+    </dl>
   </article>
   <article>
     <h2>Arduino summary</h2>
-    Basically Arduino is very good tool to play with. You can create a very interesting projects with it.
-    Some examples could be the next:
+    <p>
+      Basically Arduino is very good tool to play with. You can create a very interesting projects with it.
+      Some examples could be the next:
+    </p>
     <ul>
       <li>Home automation</li>
       <li>Flower self pouring device</li>
