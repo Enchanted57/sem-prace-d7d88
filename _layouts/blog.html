@@ -8,9 +8,9 @@ layout: body
     <h1 class="page-title line-top">{{ page.title }}</h1>
     {% assign subtitle_is_not_empty = page.subtitle | is_not_empty %}
     {% if subtitle_is_not_empty %}
-    <div class="page-subtitle">
+    <p class="page-subtitle">
       {{ page.subtitle }}
-    </div>
+    </p>
     {% endif %}
   </header><!-- .page-header -->
 
