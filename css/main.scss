@@ -108,6 +108,49 @@ p > a.current-home {
   text-transform: capitalize;
 }
 
+.view-all-button-white {
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0.9em 1em;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 2;
+
+  .accent-green & {
+    color: #fff;
+  }
+
+  &:before,
+  &:after {
+    border: 0.2em solid #fff;
+    box-sizing: border-box;
+    content: "";
+    height: 32%;
+    left: 0;
+    position: absolute;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    width: 100%;
+  }
+
+  &:before {
+    border-bottom: 0;
+    top: 0;
+  }
+
+  &:after {
+    border-top: 0;
+    bottom: 0;
+  }
+}
+
 @media print {
   #main-navigation {
     display: none;
