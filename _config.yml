@@ -15,6 +15,9 @@ header:
     - label: Home
       url: /
       style: link
+    - label: About
+      url: /about/
+      style: link
     - label: Portfolio
       url: /portfolio/
       style: link
@@ -24,9 +27,6 @@ header:
 #    - label: Style Guide
 #      url: /style-guide/
 #      style: link
-    - label: About
-      url: /about/
-      style: link
     - label: Contact
       url: /contact/
       style: link
