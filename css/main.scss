@@ -112,7 +112,7 @@ p > a.current-home {
   box-sizing: border-box;
   color: #fff;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   line-height: 1.2;
   padding: 0.9em 1em;
@@ -123,32 +123,6 @@ p > a.current-home {
   transform: translate(-50%,-50%);
   z-index: 2;
 
-  .accent-green & {
-    color: #fff;
-  }
-
-  &:before,
-  &:after {
-    border: 0.2em solid #fff;
-    box-sizing: border-box;
-    content: "";
-    height: 32%;
-    left: 0;
-    position: absolute;
-    transition: .3s ease;
-    -webkit-transition: .3s ease;
-    width: 100%;
-  }
-
-  &:before {
-    border-bottom: 0;
-    top: 0;
-  }
-
-  &:after {
-    border-top: 0;
-    bottom: 0;
-  }
 }
 
 @media print {
