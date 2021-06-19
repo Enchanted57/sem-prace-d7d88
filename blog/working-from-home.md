@@ -1,5 +1,6 @@
 ---
 title: Remote work
+subtitle: Advantages and disadvantages of remote office type of work. How to stay productive event at home.
 excerpt: >-
   Post about pros and cons of working from home or in office.
 date: '2021-03-21'
