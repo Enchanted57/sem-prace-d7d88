@@ -17,12 +17,7 @@
 
 .page-subtitle,
 .post-subtitle {
-  color: _palette(charcoal-light-40);
   margin-top: 0.5em;
-
-  .palette-dark & {
-    color: _palette(charcoal-light-25);
-  }
 }
 
 .post-subtitle {
