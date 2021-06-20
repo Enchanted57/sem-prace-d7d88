@@ -125,6 +125,10 @@ p > a.current-home {
 
 }
 
+span.upper {
+  text-transform: uppercase;
+}
+
 @media print {
   #main-navigation {
     display: none;
