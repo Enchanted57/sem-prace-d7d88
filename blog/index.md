@@ -1,6 +1,6 @@
 ---
 title: Blog
-subtitle: 'I write blog about my favorite tech and productivity. You will find posts about what I built, and my experience.'
+subtitle: 'I write blog about my favorite tech and productivity. You will find posts about what I built, and my experience. You may need to have a little programming background for some posts.'
 hide_title: false
 col_number: three
 seo:
