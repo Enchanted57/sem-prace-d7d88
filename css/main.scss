@@ -130,10 +130,13 @@ span.upper {
 }
 
 @media print {
-  #main-navigation {
-    display: none;
-  }
-  #searchContentForm_1 {
+  //#main-navigation {
+  //  display: none;
+  //}
+  //#searchContentForm_1 {
+  //  display: none;
+  //}
+  .non-printable {
     display: none;
   }
 }
