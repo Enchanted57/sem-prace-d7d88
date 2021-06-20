@@ -149,3 +149,7 @@ ol.food-gallery {
     }
   }
 }
+
+time.published:before {
+  content: '[Published] '
+}
