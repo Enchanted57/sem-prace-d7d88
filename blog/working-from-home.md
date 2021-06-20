@@ -8,16 +8,16 @@ thumb_image: images/9_thumb.jpg
 image: images/9.jpg
 seo:
   title: The Advantages and Disadvantages of Working from Home
-  description: Interdum posuere lorem ipsum dolor sit amet consectetur
+  description: The Advantages and Disadvantages of Working from Home
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: The Advantages and Disadvantages of Working from Home
+      value: Remote work
       keyName: property
     - name: 'og:description'
-      value: Interdum posuere lorem ipsum dolor sit amet consectetur
+      value: The Advantages and Disadvantages of Working from Home
       keyName: property
     - name: 'og:image'
       value: images/9.jpg
@@ -26,9 +26,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: The Advantages and Disadvantages of Working from Home
+      value: Remote work
     - name: 'twitter:description'
-      value: Interdum posuere lorem ipsum dolor sit amet consectetur
+      value: The Advantages and Disadvantages of Working from Home
     - name: 'twitter:image'
       value: images/9.jpg
       relativeUrl: true
