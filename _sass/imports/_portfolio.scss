@@ -137,7 +137,8 @@
     }
 
     .project-title {
-      opacity: 0;
+      opacity: 1;
+      visibility: visible;
       -webkit-transition: opacity .3s;
       transition: opacity .3s;
     }

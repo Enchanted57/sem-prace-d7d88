@@ -16,7 +16,7 @@ layout: body
     {% assign display_projects = '/projects' | get_pages | sort: 'date' | reverse %}
     {% for post in display_projects %}
     <article class="project">
-      <a href="{{ post.url | relative_url }}" class="project-link">
+      <a href="{{ post.url | relative_url }}" class="project-link view-all-link">
         {% assign thumb_image_is_not_empty = post.thumb_image | is_not_empty %}
         {% if thumb_image_is_not_empty %}
         <div class="project-thumbnail">
