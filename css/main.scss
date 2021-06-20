@@ -133,3 +133,15 @@ p > a.current-home {
     display: none;
   }
 }
+
+ol.food-gallery {
+  li {
+    margin-top: 2em;
+
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
